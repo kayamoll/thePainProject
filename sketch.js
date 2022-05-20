@@ -1,7 +1,7 @@
 let slider;
 
 function setup() {
-  createCanvas(400,400);
+  createCanvas(windowWidth, windowHeight);
   slider = createSlider(0, 255, 100, 0.1);
   pixelDensity(1);
 
