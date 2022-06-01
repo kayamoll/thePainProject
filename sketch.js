@@ -1,8 +1,13 @@
 let slider;
+let canvas;
 
 function setup() {
-  createCanvas(windowWidth,windowHeight);
-  slider = createSlider(0, 255, 100, 0.1);
+  canvas = createCanvas(windowWidth,windowHeight);
+  canvas.position(0,0);
+  canvas.style("z-index", "-1");
+  slider = createSlider(0, 255, 127, 0.1);
+  slider.style('width', '200px');
+  slider.position(width/2-100, height - 50);
   pixelDensity(1);
 
 }
