@@ -14,15 +14,15 @@ function setup() {
 
 function draw() {
   background(220);
-  var temp = slider.value();
+  var temperature = slider.value();
   loadPixels();
   
   for (var y = 0; y < height; y++) {
     for (var x = 0; x < width; x++) {
       var index = (x + y * width)*4;
-      pixels[index+0] = temp;
+      pixels[index+0] = temperature;
       pixels[index+1] = x/3;
-      pixels[index+2] = 255-(temp);
+      pixels[index+2] = 255-(temperature);
       pixels[index+3] = 255;
     }
   }
