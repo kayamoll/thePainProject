@@ -24,7 +24,6 @@ function setup() {
   slider.changed(updateParams);
   // update it at the very start to make sure the url is correct if we dont slide the slider
   updateParams();
-  }
 
   background(220);
   loadPixels();
