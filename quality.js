@@ -43,7 +43,7 @@ function draw() {
   
   
   translate(width/2, height/2);
-  stroke(0);
+  stroke(200);
   strokeWeight(4);
   noFill();
   beginShape();
@@ -55,8 +55,7 @@ function draw() {
     let x = r * cos(a);
     let y = r * sin(a);
     vertex(x, y);
-    
-  }
+    }
   endShape(CLOSE);
   //noLoop;
   //updatePixels();
