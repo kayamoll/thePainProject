@@ -40,7 +40,8 @@ function setup() {
   //noLoop();
 }
 
-function draw() {    
+function draw() {
+  loop();
   translate(width/2, height/2);
   blendMode(SOFT_LIGHT);
   stroke(100);
