@@ -43,8 +43,8 @@ function draw() {
   
   
   translate(width/2, height/2);
-  stroke(200);
-  strokeWeight(4);
+  stroke(255);
+  strokeWeight(3);
   noFill();
   beginShape();
   noiseMax = slider.value();
@@ -55,7 +55,8 @@ function draw() {
     let x = r * cos(a);
     let y = r * sin(a);
     vertex(x, y);
-    }
+    
+  }
   endShape(CLOSE);
   //noLoop;
   //updatePixels();
