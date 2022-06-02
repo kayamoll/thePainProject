@@ -37,7 +37,7 @@ function setup() {
     }
   }
   updatePixels();
-  noLoop();
+  //noLoop();
 }
 
 function draw() {    
