@@ -23,7 +23,10 @@ function setup() {
   slider.changed(updateParams);
   // update it at the very start to make sure the url is correct if we dont slide the slider
   updateParams();
+  }
 
+
+function draw() { 
   background(220);
   loadPixels();
   for (var y = 0; y < height; y++) {
@@ -35,11 +38,10 @@ function setup() {
       pixels[index+3] = 255;
     }
   }
+  noLoop();
   updatePixels();
-  }
-
-
-function draw() {  
+  
+  
   translate(width/2, height/2);
   stroke(255);
   strokeWeight(4);
@@ -57,7 +59,7 @@ function draw() {
   }
   endShape(CLOSE);
   //noLoop;
-  updatePixels();
+  //updatePixels();
 }
 
 function updateParams() {
