@@ -13,7 +13,7 @@ let slider;
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0,0);
-  canvas.style("z-index", "-2");
+  canvas.style("z-index", "-1");
   slider = createSlider(1, 40, 20, 0.1);
   slider.style('width', '200px');
   slider.position(width/2-100, height - 50);
@@ -39,7 +39,7 @@ function draw() {
     }
   }
   noLoop();
-  //updatePixels();
+  updatePixels();
   
   
   translate(width/2, height/2);
@@ -59,7 +59,7 @@ function draw() {
   }
   endShape(CLOSE);
   //noLoop;
-  updatePixels();
+  //updatePixels();
 }
 
 function updateParams() {
