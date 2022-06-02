@@ -41,7 +41,8 @@ function draw() {
   
   
   translate(width/2, height/2);
-  stroke(0);
+  stroke(255);
+  strokeWeight(4);
   noFill();
   beginShape();
   noiseMax = slider.value();
@@ -56,7 +57,7 @@ function draw() {
   }
   endShape(CLOSE);
   //noLoop;
- // updatePixels();
+  updatePixels();
 }
 
 function updateParams() {
