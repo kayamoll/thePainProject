@@ -38,7 +38,7 @@ function draw() {
       pixels[index+3] = 255;
     }
   }
-  //noLoop();
+  noLoop();
   updatePixels();
   
   
