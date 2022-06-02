@@ -20,9 +20,9 @@ function setup() {
   pixelDensity(1);
   
    // every time the slider is changed update the parameters in the link
-  //slider.changed(updateParams);
+  slider.changed(updateParams);
   // update it at the very start to make sure the url is correct if we dont slide the slider
- // updateParams();
+  updateParams();
 }
 
 function draw() {
@@ -31,9 +31,9 @@ function draw() {
   for (var y = 0; y < height; y++) {
     for (var x = 0; x < width; x++) {
       var index = (x + y * width)*4;
-      pixels[index+0] = temperature.value;
+      pixels[index+0] = temperature;
       pixels[index+1] = x/3;
-      pixels[index+2] = 255-(temperature.value);
+      pixels[index+2] = 255-(temperature);
       pixels[index+3] = 255;
     }
   }
