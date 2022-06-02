@@ -41,7 +41,7 @@ function draw() {
   noLoop();
   updatePixels();
   
-  
+  loop();
   translate(width/2, height/2);
   stroke(255);
   strokeWeight(3);
