@@ -58,7 +58,7 @@ function draw() {
     
   }
   endShape(CLOSE);
-  noLoop;
+  //noLoop;
   //updatePixels();
 }
 
