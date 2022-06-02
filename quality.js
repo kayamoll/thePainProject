@@ -58,6 +58,7 @@ function draw() {
     vertex(x, y);
     
   }
+  updatePixels();
   endShape(CLOSE);
   //noLoop();
   //updatePixels();
