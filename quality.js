@@ -1,3 +1,4 @@
+p5.disableFriendlyErrors = true;
 // get the url parameters
 const url = window.location.search;
 let params = new URLSearchParams(url);
