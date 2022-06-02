@@ -39,7 +39,7 @@ function draw() {
     }
   }
   noLoop();
-  updatePixels();
+  //updatePixels();
   
   
   translate(width/2, height/2);
@@ -59,7 +59,7 @@ function draw() {
   }
   endShape(CLOSE);
   //noLoop;
-  //updatePixels();
+  updatePixels();
 }
 
 function updateParams() {
