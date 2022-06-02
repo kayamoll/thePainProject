@@ -26,8 +26,6 @@ function setup() {
   updateParams();
   }
 
-
-function draw() {  
   background(220);
   loadPixels();
   for (var y = 0; y < height; y++) {
@@ -41,8 +39,9 @@ function draw() {
   }
   //noLoop();
   updatePixels();
-  
-  
+}
+
+function draw() {    
   translate(width/2, height/2);
   blendMode(SOFT_LIGHT);
   stroke(0);
