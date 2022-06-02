@@ -43,7 +43,7 @@ function draw() {
   
   
   translate(width/2, height/2);
-  stroke(255);
+  stroke(0);
   strokeWeight(4);
   noFill();
   beginShape();
