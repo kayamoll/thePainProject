@@ -38,10 +38,10 @@ function draw() {
       pixels[index+3] = 255;
     }
   }
-  noLoop();
+  //noLoop();
   updatePixels();
   
-  loop();
+  //loop();
   translate(width/2, height/2);
   stroke(255);
   strokeWeight(3);
