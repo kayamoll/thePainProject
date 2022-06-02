@@ -43,7 +43,7 @@ function setup() {
 function draw() {    
   translate(width/2, height/2);
   blendMode(SOFT_LIGHT);
-  stroke(0);
+  stroke(100);
   strokeWeight(3);
   noFill();
   beginShape();
