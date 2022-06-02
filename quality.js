@@ -4,7 +4,7 @@ let params = new URLSearchParams(url);
 
 // find the parameter for colour
 const temperature = params.get("temperature");
-console.log("temperature", temperature);
+//console.log("temperature", temperature);
 
 let noiseMax = 5;
 let canvas;
