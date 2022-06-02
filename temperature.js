@@ -52,5 +52,5 @@ function updateParams() {
   // get the link element (this is in the html)
   let link = document.getElementById("link");
   // update the link with the slider value
-  link.href = "temperature=" + slider.value();
+  link.href = "quality.html?temperature=" + slider.value();
 }
