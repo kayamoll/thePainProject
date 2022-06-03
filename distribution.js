@@ -1,7 +1,18 @@
+p5.disableFriendlyErrors = true;
+// get the url parameters
+const url = window.location.search;
+let params = new URLSearchParams(url);
+
+// find the parameter for colour
+const quality = params.get("quality");
+//console.log("quality", quality);
+
+
+
 let slider;
 let canvas;
 let bubbles = [];
-let noiseMax = 5;
+let noiseMax = quality;
 let c = 2;
 
 function setup() {
@@ -12,7 +23,12 @@ function setup() {
   slider.style('width', '200px');
   slider.position(width/2-100, height - 50);
   
-background(220);
+     // every time the slider is changed update the parameters in the link
+  slider.changed(updateParams);
+  // update it at the very start to make sure the url is correct if we dont slide the slider
+  updateParams();
+  
+  background(220);
   
   slider.input(update);
 
@@ -45,4 +61,11 @@ function update() {
       bubbles[i] = new Bubble (x,y,noiseMax);
     }
       
+}
+
+function updateParams() {
+  // get the link element (this is in the html)
+  let link = document.getElementById("link");
+  // update the link with the slider value
+  link.href = "quality.html?quality=" + slider.value();
 }
