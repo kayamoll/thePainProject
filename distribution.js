@@ -20,7 +20,7 @@ function setup() {
   canvas = createCanvas(windowWidth, windowHeight); 
   canvas.position(0,0);
   canvas.style("z-index","-1");
-  slider = createSlider(1, 50, 10, 1);
+  slider = createSlider(1, 50, 25, 1);
   slider.style('width', '200px');
   slider.position(width/2-100, height - 50);
   
@@ -65,5 +65,5 @@ function updateParams() {
   // get the link element (this is in the html)
   let link = document.getElementById("link");
   // update the link with the slider value
-  link.href = "quality.html?quality=" + slider.value();
+  link.href = "distribution.html?distribution=" + slider.value();
 }
