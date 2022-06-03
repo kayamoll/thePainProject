@@ -55,7 +55,7 @@ function drawBackground() {
   loadPixels();
   for (var y = 0; y < windowHeight; y++) {
     for (var x = 0; x < windowWidth; x++) {
-      var index = (x + y * width)*4;
+      var index = (x + y * windowWidth)*4;
       pixels[index+0] = colour;
       pixels[index+1] = x/3;
       pixels[index+2] = 255-(colour);
