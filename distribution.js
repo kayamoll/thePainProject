@@ -52,10 +52,12 @@ function update() {
   background(220);
   c = slider.value();
     for (let i = 0; i < 20; i++){
+     let x = 0;
+     let y = 0;
      let a = i * 137.5;
      let r = c * sqrt(i);
-     let x = r * cos(a);
-     let y = r * sin(a);
+     x = r * cos(a);
+     y = r * sin(a);
       bubbles[i] = new Bubble (x,y,noiseMax);
     }
       
