@@ -6,6 +6,7 @@ let params = new URLSearchParams(url);
 // find the parameter for colour
 const quality = params.get("quality");
 //console.log("quality", quality);
+const temperature = params.get("temperature");
 
 
 
@@ -14,6 +15,7 @@ let canvas;
 let bubble;
 let bubbles = [];
 let noiseMax = quality;
+let colour = temperature;
 let c = 2;
 
 function setup() {
@@ -50,6 +52,17 @@ function draw() {
 function drawBackground() {
   
   background(220);
+  loadPixels();
+  for (var y = 0; y < height; y++) {
+    for (var x = 0; x < width; x++) {
+      var index = (x + y * width)*4;
+      pixels[index+0] = colour;
+      pixels[index+1] = x/3;
+      pixels[index+2] = 255-(colour);
+      pixels[index+3] = 255;
+    }
+  }
+  updatePixels();
   
 }
 
