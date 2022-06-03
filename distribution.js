@@ -53,8 +53,8 @@ function drawBackground() {
   
   background(220);
   loadPixels();
-  for (var y = 0; y < height; y++) {
-    for (var x = 0; x < width; x++) {
+  for (var y = 0; y < windowHeight; y++) {
+    for (var x = 0; x < windowWidth; x++) {
       var index = (x + y * width)*4;
       pixels[index+0] = colour;
       pixels[index+1] = x/3;
