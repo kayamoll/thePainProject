@@ -69,6 +69,7 @@ function draw() {
 function update() { 
   //clear();
   drawBackground();
+  push();
   c = slider.value();
     for (let i = 0; i < 20; i++){
      let x = 0;
@@ -79,6 +80,7 @@ function update() {
      y = r * sin(a);
       bubbles[i] = new Bubble (x,y,noiseMax);
     }
+  pop();
       
 }
 
