@@ -11,6 +11,7 @@ const quality = params.get("quality");
 
 let slider;
 let canvas;
+let bubble;
 let bubbles = [];
 let noiseMax = quality;
 let c = 2;
@@ -31,13 +32,10 @@ function setup() {
   background(220);
   
   slider.input(update);
-
-    
-   for (let i = 0; i < 20; i++){
+  
        let x = 0;
        let y = 0;
-      bubbles[i] = new Bubble (x,y,noiseMax);
-    }
+      bubble = new Bubble (x,y,noiseMax);
 
 }
 
