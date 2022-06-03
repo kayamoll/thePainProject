@@ -41,14 +41,6 @@ function setup() {
 
 }
 
-function draw() {
-  
-  for (let i = 0; i < bubbles.length; i++){
-        bubbles[i].show();
-          
-      }
-}
-
 function drawBackground() {
   
   background(220);
@@ -64,6 +56,14 @@ function drawBackground() {
   }
   updatePixels();
   
+}
+
+
+function draw() {
+  
+  for (let i = 0; i < bubbles.length; i++){
+        bubbles[i].show();   
+      }
 }
 
 function update() { 
