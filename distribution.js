@@ -20,7 +20,7 @@ function setup() {
   canvas = createCanvas(windowWidth, windowHeight); 
   canvas.position(0,0);
   canvas.style("z-index","-1");
-  slider = createSlider(1, 50, 25, 1);
+  slider = createSlider(1, 70, 35, 1);
   slider.style('width', '200px');
   slider.position(width/2-100, height - 50);
   
@@ -48,7 +48,7 @@ function draw() {
 }
 
 function update() { 
-  clear();
+  //clear();
   background(220);
   c = slider.value();
     for (let i = 0; i < 20; i++){
