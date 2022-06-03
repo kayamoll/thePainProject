@@ -45,5 +45,4 @@ function update() {
       bubbles[i] = new Bubble (x,y,noiseMax);
     }
       
-  
 }
