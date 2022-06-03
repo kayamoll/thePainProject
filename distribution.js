@@ -29,7 +29,7 @@ function setup() {
   // update it at the very start to make sure the url is correct if we dont slide the slider
   updateParams();
   
-  background(220);
+  drawBackground();
   
   slider.input(update);
   
@@ -47,9 +47,15 @@ function draw() {
       }
 }
 
+function drawBackground() {
+  
+  background(220);
+  
+}
+
 function update() { 
   //clear();
-  background(220);
+  drawBackground();
   c = slider.value();
     for (let i = 0; i < 20; i++){
      let x = 0;
