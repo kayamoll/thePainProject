@@ -22,7 +22,7 @@ function setup() {
   canvas = createCanvas(windowWidth, windowHeight); 
   canvas.position(0,0);
   canvas.style("z-index","-1");
-  slider = createSlider(1, 70, 35, 1);
+  slider = createSlider(2, 50, 25, 2);
   slider.style('width', '200px');
   slider.position(width/2-100, height - 50);
   
