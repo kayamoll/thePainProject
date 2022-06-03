@@ -32,7 +32,6 @@ function setup() {
   drawBackground();
   
   slider.input(update);
-  update();
   
        let x = 0;
        let y = 0;
