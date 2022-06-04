@@ -68,10 +68,9 @@ function draw() {
 }
 
 function update() { 
-  push();
+  clear();
   drawBackground();
-  pop();
-  
+
   c = slider.value();
     for (let i = 0; i < 20; i++){
      let x = 0;
