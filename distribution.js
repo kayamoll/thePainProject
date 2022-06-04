@@ -36,15 +36,13 @@ function setup() {
   
   slider.input(update);
   
-       let x = 0;
-       let y = 0;
-      bubble = new Bubble (x,y,noiseMax);
+      bubble = new Bubble (0,0,noiseMax);
 
 }
 
 function drawBackground() {
   
-  background(220);
+  //background(220);
   loadPixels();
   for (var y = 0; y < windowHeight; y++) {
     for (var x = 0; x < windowWidth; x++) {
@@ -62,13 +60,13 @@ function drawBackground() {
 
 function draw() {
   
-  for (let i = 0; i < bubbles.length; i++){
-        bubbles[i].show();   
-      }
+  //for (let i = 0; i < bubbles.length; i++){
+    //    bubbles[i].show();   
+      //}
 }
 
 function update() { 
-  clear();
+  //clear();
   drawBackground();
 
   c = slider.value();
@@ -89,5 +87,5 @@ function updateParams() {
   // get the link element (this is in the html)
   let link = document.getElementById("link");
   // update the link with the slider value
-  link.href = "timing.html?distribution=" + slider.value();
+  link.href = "finish.html?distribution=" + slider.value() + "&quality=" + quality + "&temperature=" + temperature;
 }
