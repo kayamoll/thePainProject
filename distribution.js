@@ -79,9 +79,14 @@ function update() {
      y = r * sin(a);
       bubbles[i] = new Bubble (x,y,noiseMax);
     }
- 
-      
+   
 }
+
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 
 function updateParams() {
   // get the link element (this is in the html)
