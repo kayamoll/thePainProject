@@ -8,7 +8,7 @@ class Bubble {
     translate(width / 2, height / 2);
     //translate(locationX, locationY);
     blendMode(SOFT_LIGHT);
-    stroke(5);
+    stroke(200);
     strokeWeight(3);
     noFill();
     
