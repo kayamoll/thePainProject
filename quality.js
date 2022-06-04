@@ -64,6 +64,10 @@ function draw() {
   //updatePixels();
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function updateParams() {
   // get the link element (this is in the html)
   let link = document.getElementById("link");
