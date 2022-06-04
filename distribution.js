@@ -25,6 +25,7 @@ function setup() {
   slider = createSlider(2, 50, 25, 2);
   slider.style('width', '200px');
   slider.position(width/2-100, height - 50);
+  pixelDensity(1);
   
      // every time the slider is changed update the parameters in the link
   slider.changed(updateParams);
