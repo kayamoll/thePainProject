@@ -11,7 +11,7 @@ const distribution = params.get("distribution");
 
 
 
-let slider;
+//let slider;
 let canvas;
 let bubble;
 let bubbles = [];
@@ -23,9 +23,9 @@ function setup() {
   canvas = createCanvas(windowWidth, windowHeight); 
   canvas.position(0,0);
   canvas.style("z-index","-1");
-  slider = createSlider(2, 50, 25, 2);
-  slider.style('width', '200px');
-  slider.position(width/2-100, height - 50);
+  //slider = createSlider(2, 50, 25, 2);
+  //slider.style('width', '200px');
+  //slider.position(width/2-100, height - 50);
   pixelDensity(1);
   
      // every time the slider is changed update the parameters in the link
