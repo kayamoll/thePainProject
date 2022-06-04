@@ -29,9 +29,9 @@ function setup() {
   pixelDensity(1);
   
      // every time the slider is changed update the parameters in the link
-  slider.changed(updateParams);
+ // slider.changed(updateParams);
   // update it at the very start to make sure the url is correct if we dont slide the slider
-  updateParams();
+ // updateParams();
   
   drawBackground();
   
@@ -91,9 +91,9 @@ function windowResized() {
 }
 
 
-function updateParams() {
-  // get the link element (this is in the html)
-  let link = document.getElementById("link");
-  // update the link with the slider value
-  link.href = "finish.html?distribution=" + distribution + "&quality=" + quality + "&temperature=" + temperature;
-}
+// function updateParams() {
+//   // get the link element (this is in the html)
+//   let link = document.getElementById("link");
+//   // update the link with the slider value
+//   link.href = "finish.html?distribution=" + distribution + "&quality=" + quality + "&temperature=" + temperature;
+// }
