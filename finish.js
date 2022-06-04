@@ -95,5 +95,5 @@ function updateParams() {
   // get the link element (this is in the html)
   let link = document.getElementById("link");
   // update the link with the slider value
-  link.href = "finish.html?distribution=" + slider.value() + "&quality=" + quality + "&temperature=" + temperature;
+  link.href = "finish.html?distribution=" + distribution + "&quality=" + quality + "&temperature=" + temperature;
 }
